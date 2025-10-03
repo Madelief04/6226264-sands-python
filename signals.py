@@ -28,3 +28,18 @@ def time_shift_signal(signal, shift_seconds, sampling_rate):
 sine_shifted = time_shift_signal(sine_wave, 1, 5) 
 sawtooth_shifted = time_shift_signal(sawtooth_wave, 2, 100)  
 
+def time_scale_signal(signal, scale_factor, sampling_rate):
+    """Scale the time axis of a signal by a factor"""
+    original_length = len(signal)
+    new_length = int(original_length / scale_factor)
+    
+    
+    original_indices = np.arange(original_length)
+    new_indices = np.linspace(0, original_length - 0.05, new_length)
+    
+    scaled_signal = np.interp(new_indices, original_indices, signal)
+    return scaled_signal
+
+sine_fast = time_scale_signal(sine_wave, 2, 100)
+
+sine_slow = time_scale_signal(sine_wave, 0.5, 100)
