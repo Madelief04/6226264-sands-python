@@ -1,7 +1,6 @@
-import matplotlib.pyplot as plt
 import numpy as np
 
-# sine wave with parameters frequency, amplitude, duration, sampling_rate, width =1
+# sine wave with parameters frequency, amplitude, duration, sampling_rate
 def generate_sine_wave (frequency, amplitude, duration, sampling_rate): 
     t = np.linspace(0, duration, int(sampling_rate * duration))
     signal = amplitude * np.sin(2 * np.pi * frequency * t)
