@@ -20,3 +20,11 @@ def generate_sawtooth_wave (frequency, amplitude, duration, sampling_rate, width
 sawtooth_wave = generate_sawtooth_wave (3, 0.4, 2, 100)
 
 plt.plot(sawtooth_wave)
+
+def time_shift_signal(signal, shift_seconds, sampling_rate):
+    shift_samples = int(shift_seconds * sampling_rate)
+    return (signal, shift_samples)
+
+sine_shifted = time_shift_signal(sine_wave, 1, 5) 
+sawtooth_shifted = time_shift_signal(sawtooth_wave, 2, 100)  
+
