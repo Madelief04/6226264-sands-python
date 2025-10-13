@@ -17,4 +17,3 @@ For both signals the parameters frequency, amplitude, duration and sampling_rate
 The signal.py contains four functions. Generate_sine_wave for making a sine signal. Generege_sawtooth_wave for a sawtooth function. A time_shift_signal for time shifting the initial signals and a time_scale_signal for timescaling the inital fignals. 
 
 The run.py file contains those function plus a plot for each function individually. For both the sine and sawtooth signal, a seperate plot is made for the signal that is slowed ( *0.5) and fasted (*2). (This values can be adjusted). And there is a plot for the shifted signals. This means in total 8 plots (4 for each signal; 1 normal signal and 3 with the operations). 
-
