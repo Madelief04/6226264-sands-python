@@ -40,3 +40,5 @@ sine_slow = time_scale_signal(sine_wave, 0.5, 100)
 
 sawtooth_fast = time_scale_signal(sawtooth_wave, 2, 100)
 sawtooth_slow = time_scale_signal(sawtooth_wave, 0.5, 100)
+
+"""trying docstrings"""
