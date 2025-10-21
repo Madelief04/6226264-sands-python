@@ -8,6 +8,10 @@ def generate_sine_wave (frequency, amplitude, duration, sampling_rate):
 
 sine_wave = generate_sine_wave (2, 1, 2, 100)
 
+
+""""generate a sine wave signal using the parameters frequency, amplitude, duration, and sampling_rate.
+The function returns a numpy array representing the sine wave signal. """
+
 # sawtooth wave with parameters frequency, amplitude, duration, sampling_rate, width =1
 def generate_sawtooth_wave (frequency, amplitude, duration, sampling_rate, width =1 ): 
     t = np.linspace(0, duration, int(sampling_rate * duration))
@@ -40,5 +44,3 @@ sine_slow = time_scale_signal(sine_wave, 0.5, 100)
 
 sawtooth_fast = time_scale_signal(sawtooth_wave, 2, 100)
 sawtooth_slow = time_scale_signal(sawtooth_wave, 0.5, 100)
-
-"""trying docstrings"""
