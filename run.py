@@ -153,8 +153,6 @@ plt.ylabel('Amplitude')
 plt.grid(True)
 plt.show()
 
-# hello
-
 
 
 
