@@ -3,11 +3,11 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 
-[project]
-name = "Madelief"
+Signals and Systems project
+name = "Sine and sawtooth and time scaling and shifting operations"
 version = "0.1.0"
 description = "generating, time shifting and time scaling of a sine and sawtooth wave, including docstrings and testing"
 authors = [
-    {name = "Madelief Schenkel, email = "mschenkel@tudelft.nl}
+    {name = Madelief, email = mschenkel@tudelft.nl}
 ]
-dependencies =  ["numpy", "scipy", "matplotlib"]
+dependencies = ["    "numpy", "scipy", matplotlib"]
