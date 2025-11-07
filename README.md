@@ -20,7 +20,7 @@ The parameters that I used for both signals are: frequency, amplitude, duration,
 
 run.py generates and plots 8 individual plots:
 - 4 plots for my sine wave signal: normal, slowed ×0.5, fasted ×2 and shifted
-- 4 plots for ,y sawtooth wave signal: normal, slowed ×0.5, fasted ×2 and shifted
+- 4 plots for my sawtooth wave signal: normal, slowed ×0.5, fasted ×2 and shifted
 
 Documentation:
 All my functions include detailed docstrings explaining parameters, return values, and usage.
