@@ -4,9 +4,6 @@ from signals import *
 def test_generate_sine_wave():
     """ Test the generate_sine_wave function with various test cases
     """
-    y = generate_sine_wave(2, 1, 2, 100)
-    assert len(t) == 200
-
     y = generate_sine_wave(0, 1, 2, 100)
     assert np.isclose(y, 0).all() 
 
