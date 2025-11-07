@@ -23,7 +23,6 @@ def test_generate_sawtooth_wave():
     """
     Test the generate_sawtooth_wave function with various test cases
     """
-
     y, t = generate_sawtooth_wave(3, 0.4, 2, 100) 
     assert len(t) == 200
 
