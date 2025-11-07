@@ -28,6 +28,8 @@ All my functions include detailed docstrings explaining parameters, return value
 Tests:
 My project also includes tests that verify sine wave generation, sawtooth wave generation, time shifting functionality, time scaling operations, and edge cases.
 
+
 How to run:
 python run.py
 python test_my_function.py
+

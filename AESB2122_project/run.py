@@ -6,10 +6,6 @@ from signals import generate_sine_wave, generate_sawtooth_wave, time_shift_signa
 sine_wave = generate_sine_wave(2, 1, 2, 100)
 sawtooth_wave = generate_sawtooth_wave(3, 0.4, 2, 100)
 
-sine_wave = generate_sine_wave (2, 1, 2, 5)        
-
-sawtooth_wave = generate_sawtooth_wave (3, 0.4, 2, 100)
-
 sine_shifted = time_shift_signal(sine_wave, 1, 5) 
 sawtooth_shifted = time_shift_signal(sawtooth_wave, 3, 100)  
 
