@@ -71,6 +71,14 @@ def test_time_scale_signal():
     print("it passed time scale test \U0001F601!!!")    
 
 
+    if __name__ == "__main__":
+    test_generate_sine_wave()
+    test_generate_sawtooth_wave() 
+    test_time_scale_signal()
+    test_time_shift_signal()
+    print(" ALL TESTS PASSED \U0001F601 !!!")  
+
+
 
 
 
