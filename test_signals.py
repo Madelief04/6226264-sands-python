@@ -65,7 +65,7 @@ def test_time_scale_signal():
     scaled_signal = time_scale_signal(signal, 0.5, 1)
     assert len(scaled_signal) == 10
 
-    scaled_signal = time_scale_signal(signal, 1, 1)  # No scaling edge case
+    scaled_signal = time_scale_signal(signal, 1, 1) 
     assert len(scaled_signal) == 5
 
     print("it passed time scale test \U0001F601!!!")    
