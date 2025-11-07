@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy import signal
-from signals import AESB2122_project.signals
+from AESB2122_project.signals import *
 
 sine_wave = generate_sine_wave(2, 1, 2, 100)
 sawtooth_wave = generate_sawtooth_wave(3, 0.4, 2, 100)
