@@ -8,7 +8,6 @@ def generate_sine_wave (frequency, amplitude, duration, sampling_rate):
 
 sine_wave = generate_sine_wave (2, 1, 2, 100)
 
-
 """"generate a sine wave signal using the parameters frequency, amplitude, duration, and sampling_rate.
 The function returns a numpy array representing the sine wave signal. """
 
