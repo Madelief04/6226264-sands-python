@@ -13,3 +13,4 @@ dependencies =  ["numpy", "scipy", "matplotlib"]
 where = ["."] 
 include = ["AESB2122_project*"] 
 exclude = ["images*", "tests*", "build*", "dist*"]
+
