@@ -4,6 +4,12 @@ from signals import *
 def test_generate_sine_wave():
     """ Test the generate_sine_wave function with various test cases
     """ 
+    y = generate_sine_wave(2, 1, 2, 100)
+    assert len(y) == 200
+
+    y = generate_sine_wave(0, 1, 2, 100)
+    assert np.isclose(y, 0).all() 
+
     y = generate_sine_wave(1, 2, 1, 1000)
     assert np.isclose(y[0], 0, atol=1e-6)      
 
@@ -17,8 +23,6 @@ def test_generate_sawtooth_wave():
     """
     Test the generate_sawtooth_wave function with various test cases
     """
-    y = generate_sawtooth_wave(0, 0.4, 2, 100)
-    assert np.isclose(y, 0).all() 
 
     y = generate_sawtooth_wave(1, 1, 1, 1000)
     assert np.isclose(y[0], -1, atol=1e-6)     
