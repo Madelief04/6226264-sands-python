@@ -42,13 +42,15 @@ def test_time_shift_signal():
     """
     Test the time_shift_signal function with various test cases
     """
-
     signal = np.array([1, 2, 3, 4, 5])
     shifted_signal, shift_samples = time_shift_signal(signal, 2, 1)
     assert shift_samples == 2
 
     shifted_signal, shift_samples = time_shift_signal(signal, 0, 1) 
     assert shift_samples == 0
+
+    shifted_signal, shift_samples = time_shift_signal(signal, -1, 1)
+    assert shift_samples == -1
 
     print("it passed time shift test \U0001F601!!!")  
 
@@ -63,6 +65,9 @@ def test_time_scale_signal():
 
     scaled_signal = time_scale_signal(signal, 0.5, 1)
     assert len(scaled_signal) == 10
+
+    scaled_signal = time_scale_signal(signal, 1, 1)  # No scaling edge case
+    assert len(scaled_signal) == 5
 
     print("it passed time scale test \U0001F601!!!")    
 
