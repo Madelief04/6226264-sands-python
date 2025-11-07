@@ -1,6 +1,13 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy import signal
+from signals import generate_sine_wave, generate_sawtooth_wave, time_shift_signal, time_scale_signal
+
+# Now use the imported functions directly
+sine_wave = generate_sine_wave(2, 1, 2, 100)
+sawtooth_wave = generate_sawtooth_wave(3, 0.4, 2, 100)
+
+# Rest of your plotting code...
 
 # sine wave with parameters frequency, amplitude, duration, sampling_rate
 def generate_sine_wave (frequency, amplitude, duration, sampling_rate): 
