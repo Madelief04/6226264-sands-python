@@ -16,7 +16,7 @@ def test_generate_sine_wave():
     y, t = generate_sine_wave(5, 3, 1, 1000)
     assert np.isclose(max(y), 3, atol=1e-6)
 
-    print("it passed all tests \U0001F601!!!")
+    print("it passed generate sine wave test \U0001F601!!!")
 
 
 def test_generate_sawtooth_wave():
@@ -36,7 +36,7 @@ def test_generate_sawtooth_wave():
     y, t = generate_sawtooth_wave(5, 2, 1, 1000)
     assert np.isclose(max(y), 2, atol=1e-6) 
 
-    print("it passed all tests \U0001F601!!") 
+    print("it passed generate saqtooth wave test \U0001F601!!") 
 
 def test_time_shift_signal():
     """
@@ -50,7 +50,7 @@ def test_time_shift_signal():
     shifted_signal, shift_samples = time_shift_signal(signal, 0, 1) 
     assert shift_samples == 0
 
-    print("it passed all tests \U0001F601!!!")  
+    print("it passed time shift test \U0001F601!!!")  
 
 
 def test_time_scale_signal():
@@ -64,7 +64,7 @@ def test_time_scale_signal():
     scaled_signal = time_scale_signal(signal, 0.5, 1)
     assert len(scaled_signal) == 10
 
-    print("it passed all tests \U0001F601!!!")    
+    print("it passed time scale test \U0001F601!!!")    
 
 
 
