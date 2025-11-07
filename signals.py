@@ -7,8 +7,6 @@ def generate_sine_wave (frequency, amplitude, duration, sampling_rate):
     signal = amplitude * np.sin(2 * np.pi * frequency * t)
     return signal
 
-sine_wave = generate_sine_wave (2, 1, 2, 100)
-
 """"generate a sine wave signal using the parameters frequency, amplitude, duration, and sampling_rate.
 The function returns a numpy array representing the sine wave signal. """
 
@@ -18,8 +16,6 @@ def generate_sawtooth_wave (frequency, amplitude, duration, sampling_rate, width
     sawtooth_wave = amplitude * signal.sawtooth(2 * np.pi * frequency * t, width)
     return sawtooth_wave
 
-sawtooth_wave = generate_sawtooth_wave (3, 0.4, 2, 100)
-
 """"generate a sawtooth wave signal using the parameters frequency, amplitude, duration, sampling_rate, and width. 
 The function returns a numpy array representing the sawtooth wave signal. """
 
@@ -28,9 +24,6 @@ The function returns a numpy array representing the sawtooth wave signal. """
 def time_shift_signal(signal, shift_seconds, sampling_rate):
     shift_samples = int(shift_seconds * sampling_rate)
     return (signal, shift_samples)
-
-sine_shifted = time_shift_signal(sine_wave, 1, 5) 
-sawtooth_shifted = time_shift_signal(sawtooth_wave, 2, 100)  
 
 """"shift a signal in time by a specified number of seconds. The function takes a signal (numpy array), shift in seconds, and sampling rate as inputs.
 It returns the shifted signal as a numpy array. """
@@ -49,11 +42,6 @@ def time_scale_signal(signal, scale_factor, sampling_rate):
 """time scale a signal by a specified factor. The function takes a signal (numpy array), scale factor, and sampling rate as inputs.
 It returns the time-scaled signal as a numpy array. """
 
-sine_fast = time_scale_signal(sine_wave, 2, 100)
-sine_slow = time_scale_signal(sine_wave, 0.5, 100)
-
-sawtooth_fast = time_scale_signal(sawtooth_wave, 2, 100)
-sawtooth_slow = time_scale_signal(sawtooth_wave, 0.5, 100)
 
 """"time scale a signal by a specified factor. The function takes a signal (numpy array), scale factor, and sampling rate as inputs.""
 """"It returns the time-scaled signal as a numpy array. """ 
