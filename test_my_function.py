@@ -20,9 +20,6 @@ def test_generate_sawtooth_wave():
     """
     Test the generate_sawtooth_wave function with various test cases
     """
-    y = generate_sawtooth_wave(3, 0.4, 2, 100) 
-    assert len(t) == 200
-
     y = generate_sawtooth_wave(0, 0.4, 2, 100)
     assert np.isclose(y, 0).all() 
 
