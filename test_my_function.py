@@ -24,10 +24,10 @@ def test_generate_sawtooth_wave():
     Test the generate_sawtooth_wave function with various test cases
     """
     y1 = generate_sawtooth_wave(5, 2, 1, 1000)  
-    assert np.isclose(max(y), 2, atol=1e-6)
+    assert np.isclose(max(y1), 2, atol=1e-6)
 
     y2 = generate_sawtooth_wave(3, 0.4, 2, 100) 
-    assert len(y) == 200
+    assert len(y2) == 200
 
     print("it passed generate saqtooth wave test \U0001F601!!") 
 
