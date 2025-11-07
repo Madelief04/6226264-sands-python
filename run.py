@@ -20,7 +20,6 @@ def generate_sawtooth_wave (frequency, amplitude, duration, sampling_rate, width
     return sawtooth_wave
 
 
-
 sawtooth_wave = generate_sawtooth_wave (3, 0.4, 2, 100)
 
 """a sawtooth wave signal using the parameters frequency, amplitude, duration, sampling_rate, and width is generated. 
@@ -49,13 +48,14 @@ def time_scale_signal(signal, scale_factor, sampling_rate):
     scaled_signal = np.interp(new_indices, original_indices, signal)
     return scaled_signal
 
+
 sine_fast = time_scale_signal(sine_wave, 2, 100)
 sine_slow = time_scale_signal(sine_wave, 0.5, 100)
 
 sawtooth_fast = time_scale_signal(sawtooth_wave, 2, 100)
 sawtooth_slow = time_scale_signal(sawtooth_wave, 0.5, 100)
 
-""""time scale a signal by a specified factor. The function takes a signal (numpy array), scale factor, and sampling rate as inputs.
+"""" time scale a signal by a specified factor. The function takes a signal (numpy array), scale factor, and sampling rate as inputs.
 It returns the time-scaled signal as a numpy array. """ 
 
 #time arrays for plotting
@@ -97,7 +97,7 @@ plt.ylabel('Amplitude')
 plt.grid(True)
 plt.show()
 
-""" """
+""" sine wave scaled faster gets plotted here"""
 
 #sine scaled slower
 plt.figure(figsize=(8, 4))
@@ -108,6 +108,8 @@ plt.ylabel('Amplitude')
 plt.grid(True)
 plt.show()
 
+"""sine wave scaled slower gets plotted here"""
+
 #sine shifted
 plt.figure(figsize=(8, 4))
 plt.plot(t_sine, shifted_sine[0])
@@ -116,6 +118,8 @@ plt.xlabel('Time (s)')
 plt.ylabel('Amplitude')
 plt.grid(True)
 plt.show()
+
+"""sine wave shifted gets plotted here"""
 
 #sawtooth normal
 plt.figure(figsize=(8, 4))
@@ -126,6 +130,8 @@ plt.ylabel('Amplitude')
 plt.grid(True)
 plt.show()
 
+"""a normal sawtooth wave gets plotted here"""
+
 #sawtooth scaled faster
 plt.figure(figsize=(8, 4))
 plt.plot(t_sawtooth_fast, sawtooth_fast)
@@ -134,6 +140,8 @@ plt.xlabel('Time (s)')
 plt.ylabel('Amplitude')
 plt.grid(True)
 plt.show()
+
+"""sawtooth wave scaled faster gets plotted here"""
 
 #sawtooth scaled slower
 plt.figure(figsize=(8, 4))
@@ -144,6 +152,9 @@ plt.ylabel('Amplitude')
 plt.grid(True)
 plt.show()
 
+
+"""sawtooth wave scaled slower gets plotted here"""
+
 #sawtooth shifted
 plt.figure(figsize=(8, 4))
 plt.plot(t_sawtooth, shifted_sawtooth[0])
@@ -153,6 +164,7 @@ plt.ylabel('Amplitude')
 plt.grid(True)
 plt.show()
 
+"""sawtooth wave shifted gets plotted here"""
 
 
 
