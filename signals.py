@@ -1,4 +1,5 @@
 import numpy as np
+from scipy import signal
 
 # sine wave with parameters frequency, amplitude, duration, sampling_rate
 def generate_sine_wave (frequency, amplitude, duration, sampling_rate): 
