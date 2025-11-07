@@ -26,6 +26,15 @@ def test_generate_sawtooth_wave():
     y = generate_sawtooth_wave(3, 0.4, 2, 100) 
     assert len(y) == 200
 
+    y = generate_sawtooth_wave(2, 0, 1, 100)
+    assert np.isclose(y, 0).all()  
+
+    y = generate_sawtooth_wave(100, 0.5, 0.1, 10000)
+    assert len(y) == 1000  
+
+    y = generate_sawtooth_wave(1, 1, 0.001, 1000)
+    assert len(y) == 1 
+
     print("it passed generate sawtooth wave test 😁!!") 
 
 def test_time_shift_signal():
@@ -66,7 +75,7 @@ if __name__ == "__main__":
     test_generate_sawtooth_wave()
     test_time_shift_signal()
     test_time_scale_signal()
-    print(" ALL TESTS PASSED! 😁!!!")
+    print("ALL TESTS PASSED! 😁!!!")
 
 
 
