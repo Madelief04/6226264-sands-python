@@ -41,9 +41,23 @@ def test_generate_sawtooth_wave():
 
     print("it passed all tests \U0001F601!!") 
 
+def test_time_shift_signal():
+    """
+    Test the time_shift_signal function with various test cases
+    """
+
+    signal = np.array([1, 2, 3, 4, 5])
+    shifted_signal, shift_samples = time_shift_signal(signal, 2, 1) #this test is for shift in seconds
+    assert shift_samples == 2
+
+    shifted_signal, shift_samples = time_shift_signal(signal, 0, 1) #this test is for zero shift
+    assert shift_samples == 0
+
+    print("it passed all tests \U0001F601!!!")  
 
 
-    
+
+
 
 
 
