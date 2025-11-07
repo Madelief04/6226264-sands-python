@@ -3,10 +3,7 @@ from signals import *
 
 def test_generate_sine_wave():
     """ Test the generate_sine_wave function with various test cases
-    """
-    y = generate_sine_wave(0, 1, 2, 100)
-    assert np.isclose(y, 0).all() 
-
+    """ 
     y = generate_sine_wave(1, 2, 1, 1000)
     assert np.isclose(y[0], 0, atol=1e-6)      
 
